@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <Folder Include="Calculations\" />
-      <Folder Include="DataProcessing\" />
     </ItemGroup>
 
 </Project>
