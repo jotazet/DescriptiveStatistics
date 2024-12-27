@@ -12,10 +12,6 @@ namespace MeasuresOfLocation.Calculations
         public double[] Fi { get; init; }
         public string[] IntervalXi { get; init; }
 
-        public Calculations(double[] xi)
-        {
-            Xi = xi;
-        }
         public Calculations(double[] xi, double[] fi)
         {
             Xi = xi;
@@ -25,21 +21,6 @@ namespace MeasuresOfLocation.Calculations
         {
             IntervalXi = xi;
             Fi = fi;
-        }
-
-        public static double ArithmeticMean(double[] Xi)
-        {
-            if (Xi == null || Xi.Length == 0)
-            {
-                throw new InvalidOperationException("Xi column is empty or not initialized.");
-            }
-
-            double sum = 0;
-            foreach (var value in Xi)
-            {
-                sum += value;
-            }
-            return sum / Xi.Length;
         }
 
         public static double DiscreteWeightedArithmeticMean(double[] Xi, double[] Fi)
