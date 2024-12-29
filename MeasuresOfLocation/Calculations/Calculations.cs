@@ -27,21 +27,6 @@ namespace MeasuresOfLocation.Calculations
             Fi = fi;
         }
 
-        public static double ArithmeticMean(double[] Xi)
-        {
-            if (Xi == null || Xi.Length == 0)
-            {
-                throw new InvalidOperationException("Xi column is empty or not initialized.");
-            }
-
-            double sum = 0;
-            foreach (var value in Xi)
-            {
-                sum += value;
-            }
-            return sum / Xi.Length;
-        }
-
         public static double DiscreteWeightedArithmeticMean(double[] Xi, double[] Fi)
         {
             if (Xi == null || Xi.Length == 0)
