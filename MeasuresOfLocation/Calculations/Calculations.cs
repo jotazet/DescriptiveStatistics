@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace MeasuresOfLocation.Calculations
 {
-    class Calculations
+    class Data
     {
         public double[] Xi { get; init; }
         public double[] Fi { get; init; }
         public string[] IntervalXi { get; init; }
 
-        public Calculations(double[] xi)
+        public Data(double[] xi)
         {
             Xi = xi;
         }
-        public Calculations(double[] xi, double[] fi)
+        public Data(double[] xi, double[] fi)
         {
             Xi = xi;
             Fi = fi;
         }
-        public Calculations(string[] xi, double[] fi)
+        public Data(string[] xi, double[] fi)
         {
             IntervalXi = xi;
             Fi = fi;
