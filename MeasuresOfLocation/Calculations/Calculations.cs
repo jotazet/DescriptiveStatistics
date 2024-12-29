@@ -27,7 +27,7 @@ namespace MeasuresOfLocation.Calculations
             Fi = fi;
         }
 
-        public static double DiscreteWeightedArithmeticMean(double[] Xi, double[] Fi)
+        public double DiscreteWeightedArithmeticMean()
         {
             if (Xi == null || Xi.Length == 0)
             {
@@ -61,7 +61,7 @@ namespace MeasuresOfLocation.Calculations
             }
         }
 
-        public static double IntervalWeightedArithmeticMean(string[] IntervalXi, double[] Fi)
+        public double IntervalWeightedArithmeticMean()
         {
             if (IntervalXi == null || IntervalXi.Length == 0)
             {
